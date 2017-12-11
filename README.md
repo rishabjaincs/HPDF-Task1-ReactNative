@@ -18,6 +18,9 @@ later dependencies:
 2. npm install react-native-searchbar
 3. npm install react-navigation
 
+(If you find any problem in installing npm files try once it will work)
+
 
 react-native run-android or react-native run-ios
+
 // will help to run the application 
