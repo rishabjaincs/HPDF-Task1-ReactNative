@@ -10,6 +10,7 @@ for more information:  https://facebook.github.io/react-native/docs/getting-star
 Now after that clone the repository and at the location of directory using your favourite terminal (Here i use GitBash):
 
 1. npm install
+
 // will install all the dependecies
 
 later dependencies:
