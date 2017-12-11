@@ -6,7 +6,7 @@ import React,{Component} from 'react';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 
 import {
-  Button,
+  
   ScrollView,
   Platform,
   StyleSheet,
@@ -14,7 +14,7 @@ import {
   Image,
   View,TouchableOpacity, TouchableHighlight
 } from 'react-native';
-import { Container, Header, Left, Body, Right, Title } from 'native-base';
+import { Container, Header, Left, Body, Right, Title,Button,Icon,Thumbnail } from 'native-base';
 import SearchBar from 'react-native-searchbar';
 
 import {TabNavigator,DrawerNavigator} from 'react-navigation';
@@ -80,15 +80,32 @@ const MainScreenNavigator= TabNavigator({
 class MyHomeScreen extends Component {
   render(){
     return(
-      
-
-<View style={{ flex: 1, marginTop: 0 }}>
+      <View style={{ flex: 1}}>
+      <Container>
+        <Header style={{backgroundColor:'white'}}>
+          <Left>
+            
+            <Thumbnail 
+            style={{width:35,height: 35}}
+            source={{uri: 'https://qph.ec.quoracdn.net/main-thumb-106720517-200-kenemtfjcvnmelsgvldvxfywrheijala.jpeg'}} />
+          </Left>
+          <Body>
+            <Title style={{color:'black'}}>Home</Title>
+          </Body>
+          <Right>
+            <Button transparent>
+              <Icon name='menu' style={{color:'black'}} />
+            </Button>
+          </Right>
+        </Header>
+      </Container>
+<View style={{ flex: 2, marginTop: 5}}>
     
     <SearchBar
     ref={(ref) => this.searchBar = ref}
           showOnLoad
           placeholder='Search Twitter'/>
-
+</View>
     <View style={
       {
       flex: 3,
@@ -165,7 +182,7 @@ const DrawerExample = DrawerNavigator(
 {
     
     drawerPosition: 'left',
-    initialRouteName: 'Moments'
+    initialRouteName: 'Home'
 
 }
 
