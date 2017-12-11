@@ -9,13 +9,13 @@ for more information:  https://facebook.github.io/react-native/docs/getting-star
 
 Now after that clone the repository and at the location of directory using your favourite terminal (Here i use GitBash):
 
-npm install
+1. npm install
 // will install all the dependecies
 
 later dependencies:
 
-npm install react-native-searchbar
-npm install react-navigation
+2. npm install react-native-searchbar
+3. npm install react-navigation
 
 
 react-native run-android or react-native run-ios
