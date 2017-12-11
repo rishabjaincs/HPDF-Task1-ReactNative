@@ -12,5 +12,11 @@ Now after that clone the repository and at the location of directory using your 
 npm install
 // will install all the dependecies
 
+later dependencies:
+
+npm install react-native-searchbar
+npm install react-navigation
+
+
 react-native run-android or react-native run-ios
 // will help to run the application 
