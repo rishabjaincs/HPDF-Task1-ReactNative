@@ -164,7 +164,8 @@ const DrawerExample = DrawerNavigator(
 },
 {
     
-    drawerPosition: 'left'
+    drawerPosition: 'left',
+    initialRouteName: 'Moments'
 
 }
 

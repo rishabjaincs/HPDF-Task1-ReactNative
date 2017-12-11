@@ -5,6 +5,7 @@ import React from 'react';
 import {Text,Image,View,TouchableOpacity, TouchableHighlight} from 'react-native';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import { Container, Header, Left, Body, Right, Button, Icon, Title,Thumbnail } from 'native-base';
+import { Content, List, ListItem, Switch } from 'native-base';
 import SearchBar from 'react-native-searchbar';
 
 export default class first extends React.Component{
@@ -27,7 +28,14 @@ export default class first extends React.Component{
 	
 	render(){
 
-		return <View>
+		return <View
+      style={
+      {
+      flex: 1,
+      
+      }
+    }
+      >
       <Container>
         <Header style={{backgroundColor:'white'}}>
           <Left>
@@ -45,24 +53,48 @@ export default class first extends React.Component{
             </Button>
           </Right>
         </Header>
+        <Content>
+          <List>
+            <ListItem icon>
+              <Left>
+                <Icon name="plane" />
+              </Left>
+              <Body>
+                <Text>Private Mode</Text>
+              </Body>
+              <Right>
+                <Switch value={false} />
+              </Right>
+            </ListItem>
+            <ListItem icon>
+              <Left>
+                <Icon name="wifi" />
+              </Left>
+              <Body>
+                <Text>Available</Text>
+              </Body>
+              <Right>
+                <Text>Rishab Jain</Text>
+                <Icon name="arrow-forward" />
+              </Right>
+            </ListItem>
+            <ListItem icon>
+              <Left>
+                <Icon name="bluetooth" />
+              </Left>
+              <Body>
+                <Text>Private Tweets</Text>
+              </Body>
+              <Right>
+                <Text>On</Text>
+                <Icon name="arrow-forward" />
+              </Right>
+            </ListItem>
+          </List>
+        </Content>
       </Container>
 
-		<View style={
-			{
-			flex: 3,
-			marginTop: 300,
-			justifyContent: 'center',
-			alignItems: 'center'
-			}
-		}>
-
-		<Image 
-style={{width: 120, height: 120, marginTop:30, marginBottom:30, alignItems: 'center'}}
-source={{uri:'https://abs.twimg.com/icons/apple-touch-icon-192x192.png'}}/>
-		<Text style={{fontSize: 30, color: '#55ACEE', textAlign: 'center'}}>
-		Settings and Privacy
-		</Text>
-		</View>
+		
 		</View>
 
 	}
