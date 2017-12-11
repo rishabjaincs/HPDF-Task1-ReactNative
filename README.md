@@ -1,4 +1,5 @@
 The git project includes an app develop over react-native that can run over android and ios. The App has been developed in term to complete the task 1 for Hasura HPDF. The main target of the project is to get familiarize with the environment and How to use it.
+( NOTE: Drawer have no functional button to open you have to drag right from corner to open )
 To run the app into the emulator or in your device. Here are some prerequisite:
 1. Installed React-Native
 2. NPM Installed
@@ -24,3 +25,5 @@ later dependencies:
 react-native run-android or react-native run-ios
 
 // will help to run the application 
+
+
